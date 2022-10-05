@@ -1,0 +1,33 @@
+<div class="main" fxLayout="row" fxLayoutAlign="center center" [style.background-color]="bgColor">
+    <div class="inner" fxLayout="row" fxLayoutAlign="center center">
+        <div class="inner1" fxLayout="column" fxLayoutAlign="space-evenly start">
+            <img class="shop" src="../../../assets/component.png">
+            <h4>ONLINE BOOK SHOPPING</h4>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="inner2" >
+            <div class="inner22" fxLayout="column" fxLayoutAlign="space-around center">
+                <div class="head" fxLayout="row" fxLayoutAlign="start center">
+                    <h1 class="login" (click)="login()">Login</h1>
+                    <h1 class="signup" (click)="register()">Signup</h1>
+                </div>
+                <div *ngIf="logreg">
+                    <div fxLayout="column" fxLayoutAlign="start start">
+                        <label>Username</label>
+                        <input type="email" [(ngModel)]="email"> 
+                    </div>
+                    <div fxLayout="column" fxLayoutAlign="start start">
+                        <label>Password</label>
+                        <input type="password" [(ngModel)]="password">
+                    </div>
+                    <button class="loginbutton" mat-raised-button color="primary">Login</button>
+                </div>
+        </div>
+        <div *ngIf="!logreg">
+            <app-signup></app-signup>
+        </div>
+    </div>
+    </form>
+    </div>
+
+</div>

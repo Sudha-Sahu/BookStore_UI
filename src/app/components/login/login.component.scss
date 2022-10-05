@@ -1,0 +1,50 @@
+.main{
+    background-color: grey;
+    height: 100vh;
+}
+.inner1{
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    // margin-left: 20px;
+}
+.inner2{
+    height: 320px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: -70px;
+    margin-top: -1px;
+    // border: 2px solid red;
+}
+.inner22{
+    // border: 2px solid pink;
+    margin-top: 5px;
+    
+}
+.head{
+    margin-top: 10px;
+}
+.signup{
+    margin-left: 70px;
+}
+.shop{
+    width: 180px;
+    height: 180px;
+    background: transparent;
+    border-radius: 90px;
+    margin-left: 50px;
+}
+h4{
+    margin-left: 50px;
+}
+.loginbutton{
+    background-color: brown;
+    height: 35px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    font-size: medium;
+    color: white;
+}

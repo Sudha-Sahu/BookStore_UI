@@ -1,0 +1,21 @@
+<div class="form-elements" fxLayout="column" fxLayoutAlign="center center">
+    <div class="input-div" fxLayout="column" fxLayoutAlign="start start">
+    <label>FullName</label>
+    <input id="input-element" type="text" [(ngModel)]="name">
+    </div>
+    <div class="input-div" fxLayout="column" fxLayoutAlign="start start">
+    <label>Email</label>
+    <input id="input-element" type="text" [(ngModel)]="email">
+    </div>
+    <div class="input-div" fxLayout="column" fxLayoutAlign="start start">
+    <label>Password</label>
+    <input id="input-element" type="text" [(ngModel)]="password">
+    </div>
+    <div class="input-div" fxLayout="column" fxLayoutAlign="start start">
+        <label>Phone</label>
+        <input id="input-element" type="text" [(ngModel)]="phonenum">
+    </div>
+    <div class="example-button-row">
+      <button (click)="submit()" id="login-button" mat-flat-button color="warn">Signup</button>
+    </div>
+</div>
